@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StockTickerCell" id="gTV-IL-0wX" customClass="StockTickerCell" customModule="BarakaStockMarket" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="133"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="154" height="133"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rmz-AX-wPO">
+                        <rect key="frame" x="-7" y="0.0" width="154" height="133"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="80P-QL-R78">
+                                <rect key="frame" x="10" y="30" width="134" height="73.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wt4-ap-42N">
+                                        <rect key="frame" x="45" y="0.0" width="44.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXc-p8-27g">
+                                        <rect key="frame" x="0.0" y="43.5" width="134" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+5.32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ah-BX-kC2">
+                                                <rect key="frame" x="47.5" y="4.5" width="39.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstItem="8Ah-BX-kC2" firstAttribute="centerY" secondItem="vXc-p8-27g" secondAttribute="centerY" id="1Kq-Pp-dYh"/>
+                                            <constraint firstAttribute="height" constant="30" id="Qcy-v8-tI4"/>
+                                            <constraint firstItem="8Ah-BX-kC2" firstAttribute="centerX" secondItem="vXc-p8-27g" secondAttribute="centerX" id="tmb-0o-s30"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vXc-p8-27g" firstAttribute="leading" secondItem="80P-QL-R78" secondAttribute="leading" id="3H0-du-gdJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="vXc-p8-27g" secondAttribute="trailing" id="dQb-GR-E6G"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="80P-QL-R78" firstAttribute="centerY" secondItem="rmz-AX-wPO" secondAttribute="centerY" id="9nM-ie-mZn"/>
+                            <constraint firstItem="80P-QL-R78" firstAttribute="centerX" secondItem="rmz-AX-wPO" secondAttribute="centerX" id="SnY-de-TkV"/>
+                            <constraint firstItem="80P-QL-R78" firstAttribute="leading" secondItem="rmz-AX-wPO" secondAttribute="leading" constant="10" id="wrC-aS-yQl"/>
+                            <constraint firstAttribute="trailing" secondItem="80P-QL-R78" secondAttribute="trailing" constant="10" id="xf5-km-Ra5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rmz-AX-wPO" secondAttribute="bottom" id="pt6-LG-mvx"/>
+                <constraint firstItem="rmz-AX-wPO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rgc-dB-042"/>
+                <constraint firstAttribute="trailing" secondItem="rmz-AX-wPO" secondAttribute="trailing" id="vpk-SM-5FR"/>
+                <constraint firstItem="rmz-AX-wPO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="z9f-Sa-4HF"/>
+            </constraints>
+            <size key="customSize" width="154" height="133"/>
+            <connections>
+                <outlet property="nameLabel" destination="wt4-ap-42N" id="GSQ-K5-yyz"/>
+                <outlet property="priceContainerView" destination="vXc-p8-27g" id="gqg-Ez-x8A"/>
+                <outlet property="priceLabel" destination="8Ah-BX-kC2" id="IW5-Qk-bpZ"/>
+            </connections>
+            <point key="canvasLocation" x="139.13043478260872" y="131.58482142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
